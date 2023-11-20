@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ретро игра: "Breakout" berlandbor❤️</title>
+    <style>
+        #bricksCanvas {
+            padding: 0;
+            background: #031433;
+            display: block;
+            margin: 0 auto;
+            width:100%;
+        }
+        
+        body {
+  text-align: center;
+  background:#85a7f9 ;
+}
+h1 {
+  animation: colorChange 2s infinite; /* Пример анимации изменения цвета в течение 2 секунд, бесконечно повторяется */
+}
+@keyframes colorChange {
+  0% {
+    color: white; /* Начальный цвет текста */
+  }
+  50% {
+    color: #394076; /* Цвет текста через половину времени анимации */
+  }
+  100% {
+    color: white; /* Конечный цвет текста, возвращаемся к начальному состоянию */
+  }
+}
+
+footer {
+  font-size: 24px;
+  background: linear-gradient(90deg, black, #85a7f9, black, #85a7f9, black);background-size: 200% 200%;
+  animation: colorShift 5s infinite;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+  
+}
+@keyframes colorShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+#uprav {
+color: #394076;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Игра: "Breakout"</h1>
+<p id="uprav">Управление ракеткой "I am" сенсорное, тактильное и клавиатурное.</p>
+
+  </header>
+  <section>
+    <canvas id="bricksCanvas" height="350" onclick="reloadGame()"></canvas>
+    </section>
+           <footer>
+    <p>
+      berlandbor ❤️
+    </p>
+  </footer>
+    <script src="common.js"></script>
+    <script src="bricks.js"></script>
+
+</body>
+</html>
